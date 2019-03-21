@@ -6,8 +6,14 @@
     "configurations": [
         {
             "type": "node",
+            "request": "attach",
+            "name": "Debug stream",
+            "processId": "${command:PickProcess}"
+        },
+        {
+            "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Debug http",
             "program": "${workspaceFolder}/http-server.js"
         }
     ]

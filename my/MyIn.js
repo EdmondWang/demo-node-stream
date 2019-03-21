@@ -14,12 +14,6 @@ const myIn = new Readable({
 
 myIn.currentCharCode = 65;
 
-// myIn.push('ABC');
-// myIn.push('DEF');
-// myIn.push('GHI');
-
-// myIn.push(null); // no more data
-
 myIn.pipe(process.stdout);
 
 module.exports = myIn;
